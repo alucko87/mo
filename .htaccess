@@ -1,0 +1,12 @@
+php_flag display_errors 0
+Options +FollowSymlinks
+
+AddDefaultCharset UTF-8
+Header set Cache-Control "max-age=43200"
+
+RewriteBase /
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L]

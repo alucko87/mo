@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+	<title>медикаменты</title>
+	<META NAME="description" CONTENT="медикаменты">
+	<META NAME="keywords" CONTENT="медикаменты">
+	<link href="index.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+	function make_dsplyd(id1,id2){
+		if(document.getElementById(id1).style.display=='none'){
+			document.getElementById(id1).style.display='inline';
+			document.getElementById(id2).style.display='none';	
+			}
+		else{
+			document.getElementById(id1).style.display='none';
+			document.getElementById(id2).style.display='inline';	
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="top_menu">
+		<table border="0" cellpadding="0" cellspacing="0" width="1000px" align="center">
+			<tr>
+				<td width="230px" align="center"><p style="font-family:Bauhaus;font-size:43px;margin:0px;padding:0px;"><span style="color:#9a2878;">Med</span><span style="color:#098371;">Obmen</span></p></td>
+				<td align="left" style="color:#fff;">mts: (+38050) <span style="font-size:25px;">777-77-77</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kyivstar: (+38067) <span style="font-size:25px;">777-77-77</span></td>
+				<td align="right"><a href="#"><img src="images/mail.gif"></a>&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/map.gif"></a></td>
+			</tr>
+			<tr>
+				<td style="font-size:35px;color:#fff;font-weight: bold;" align="center">МедОбмен</td>
+				<td align="left" class="menu"><a href="#">О сервисе</a><a href="#">Услуги</a><a href="#">Контакты</a><a href="#">Регистрация/вход</a></td>
+				<td align="right"><input style="border-radius: 8px;background: rgba(255, 255, 255, 0.8);width:230px;padding:7px 5px; border:0px;" value="Поиск" onfocus="if(this.value=='Поиск') this.value='';" onblur="if(this.value==''){ value='Поиск';}" /></td>
+			</tr>
+		</table>
+	</div>
+	<center>
+	<div style="background: url(images/world.gif) no-repeat fixed center top 110px;">
+	<div style="width:1000px;">
+		<br>
+		<table border="0" cellpadding="1" cellspacing="1" width="100%">
+			<tr>
+				<td width="230px"><div class="main_bottom_1">Получить лекарство</div></td>
+				<td>
+								
+					<div class="select_alfabet">
+					 <span id="alfabet_edit1"><a href="JavaScript: make_dsplyd('alfabet_edit1','alfabet_edit2')"> Все предложения по алфавиту </a>
+					 </span>
+					 <span id="alfabet_edit2" style="display:none;">
+						<div style="background: rgba(255, 255, 255, 0.9);border-radius: 10px;line-height: 2;position:relative;border:2px solid #9a2878;">
+							<div>
+							<strong>A(41)</strong>	<strong>B(44)</strong>	<strong>C(31)</strong>	<strong>D(20)</strong>	<strong>E(11)</strong>	<strong>F(19)</strong>	<strong>G(37)</strong>	<strong>H(35)</strong>	<strong>I(7)</strong>	<strong>J(11)</strong>	<strong>K(54)</strong>	<strong>L(25)</strong>	<strong>M(53)</strong>	<strong>N(19)</strong>	<strong>O(9)</strong>	<strong>P(21)</strong>	<strong>Q(1)</strong>	<strong>R(28)</strong>	<strong>S(46)</strong>	<strong>T(28)</strong>	<strong>U(6)</strong>	<strong>V(23)</strong>	<strong>W(19)</strong>	<strong>X(1)</strong>	<strong>Y(10)</strong>	<strong>Z(13)</strong>
+							</div>
+							<a style="font-size:12px;" href="JavaScript: make_dsplyd('alfabet_edit1','alfabet_edit2')">закрыть выбор медикаментов по алфавиту</a>
+						</div>
+					 </span>
+					</div>
+				</td>
+				<td align="right"><div class="main_bottom_2">Предложить лекарство</div></td>
+			</tr>
+		</table>
+		
+		<div style="background: rgba(255, 255, 255, 0.8);border:4px solid #9a2878;border-radius: 15px;width:1000px;">
+			<div class="content">
+			<table border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tr>
+					<td valign="middle"><h1 class="h1 med">Отдам даром лекарства</h1></td>
+					<td valign="middle" class="namber_p_q" align="right">Отобразить: <a href="#" class="namber_p_q_med_sel">по 10 шт</a>, <a href="#">по 30шт</a>, <a href="#">по 50шт</a>, <a href="#">все товары</a></td>
+					<td valign="middle" width="60px" align="right"><a href="#" title="отобразить плиткой" style="" onmouseover="document.images['src1'].src='images/sort1.gif';" onmouseout="document.images['src1'].src='images/sort0.gif';" ><img id="src1" src="images/sort0.gif" title="отобразить плиткой" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="отобразить списком" style="" onmouseover="document.images['src2'].src='images/sort4.gif';" onmouseout="document.images['src2'].src='images/sort3.gif';" ><img id="src2" src="images/sort3.gif" title="отобразить списком" /></a></td>
+					
+				</tr>
+			</table>
+			<table border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tr>
+					<td valign="top" width="265px" align="left">
+						<div class="zagolovki_filtrov">Дата публикации</div>
+						с <input type="text" value="01.09.2013" class="input_date" /> по <input type="text" value="01.09.2013" class="input_date" />
+						<div class="zagolovki_filtrov">Регион</div>
+						<input type="text" value="Днепропетровск" class="input_other" /> <div class="arrow" onclick="JavaScript: make_dsplyd('region_edit1','region_edit2'); if(this.className=='arrow') this.className='arrow_sel'; else this.className='arrow';">&#160;</div>
+						<span id="region_edit1"></span>
+							<span id="region_edit2" style="display:none;">
+							<table border="0" cellpadding="2" cellspacing="0" width="100%" style="font-size:11px;" class="links_town">
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Винница, Винницкая область (7/15)</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Донецк, Донецкая область (7/15)</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle" style="background: rgba(0, 0, 0, 0.5);border-radius:8px 0px 0px 8px;"><span class="otkr">-</span></td>
+									<td style="background: rgba(0, 0, 0, 0.5);border-radius:0px 8px 8px 0px;color:#fff;">Днепропетровск, Днепропетровская область (7/15)
+									</td>
+								</tr>
+								<tr align="left">
+									<td> </td>
+									<td style="padding-left:15px;">
+										<a href="#">Днепродзержинск 2/14</a><br>
+										<a href="#">Кривой Рог 2/14</a><br>
+										<a href="#">Марганец 2/14</a><br>
+										<a href="#">Никополь 2/14</a><br>
+										<a href="#">Новомосковск 2/14</a><br>
+										<a href="#">Павлоград 2/14</a>
+									</td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Житомир, Житомирская область (7/15)</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Запорожье, Запорожская область (7/15)</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Ивано-Франковск, Ивано-Франковская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Киев, Киевская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Кировоград, Кировоградская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Луганск, Луганская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Луцк, Волынская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Львов, Львовская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Николаев, Николаевская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Одесса, Одесская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Полтава, Полтавская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Ровно, Ровенская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Севастополь</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Симферополь, АР Крым</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Сумы, Сумская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Тернополь, Тернопольская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Ужгород, Закарпатская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Харьков, Харьковская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Херсон, Херсонская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Хмельницкий, Хмельницкая область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Черкассы, Черкасская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Чернигов, Черниговская область</a></td>
+								</tr>
+								<tr align="left">
+									<td valign="middle"><span class="zakr">+</span></td>
+									<td><a href="#">Черновцы, Черновицкая область</a></td>
+								</tr>
+							</table>
+						</span>
+						<div class="zagolovki_filtrov">Фармакологическая группа</div> 
+						<input type="text" value="Антигистаминные средства" class="input_other" /> <div class="arrow" onclick="JavaScript: make_dsplyd('klasifikator_edit1','klasifikator_edit2'); if(this.className=='arrow') this.className='arrow_sel'; else this.className='arrow';">&#160;</div>
+						<span id="klasifikator_edit1"></span>
+							<span id="klasifikator_edit2" style="display:none;">
+								<div>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />анальгетики, анестетики</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />антибиотики</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />витамины</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />гинекологические и урологические</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />гомеопатические</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />гормональные</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для крови</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для лечения варикозного расширения вен</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для лечения геморроя</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для лечения глаз и ушей</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для лечения горла и носа</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для лечения диабета</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для лечения предстательной железы</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для наружного применения</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для повышения потенции</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для полости рта</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для похудения</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />для суставов</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />желудочно-кишечные</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />иммуностимуляторы (повышение иммунитета)</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />обезбаливающие</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />онкологические</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />противоаллергические</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />противовирусные</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />противогельминтные</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />противогрибковые</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />противозачаточные </label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />противопаразитные</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />противопростудные</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />сердечно-сосудистые</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />травы + фиточаи</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />успокаивающие, снотворное</label>
+								</div>
+						</span>
+						<div class="zagolovki_filtrov">Наименование</div>
+						<input type="text" value="Уролисан" class="input_other" />
+						<div class="zagolovki_filtrov">Годен до <input type="text" value="01.09.2013" class="input_date_do" /></div>
+						<div class="zagolovki_filtrov">Лекарственная форма</div>
+						<input type="text" value="Капли" class="input_other" /> <div class="arrow" onclick="JavaScript: make_dsplyd('farmgroup_edit1','farmgroup_edit2'); if(this.className=='arrow') this.className='arrow_sel'; else this.className='arrow';">&#160;</div>
+							<span id="farmgroup_edit1"></span>
+							<span id="farmgroup_edit2" style="display:none;">
+								<div>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" style="line-height: 0.5;" />таблетки</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />капли</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />капсулы</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />ампулы</label>
+								</div>
+							</span>
+					 
+						<div class="zagolovki_filtrov">Производитель</div>
+						<input type="text" value="Хитрофарм" class="input_other" /> <div class="arrow" onclick="JavaScript: make_dsplyd('manufacter_edit1','manufacter_edit2'); if(this.className=='arrow') this.className='arrow_sel'; else this.className='arrow';">&#160;</div>
+							<span id="manufacter_edit1"></span>
+							<span id="manufacter_edit2" style="display:none;">
+								<div>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox"  />Хитрофарм</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />Хитрофарм</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />Хитрофарм</label>
+								</div>
+							</span>
+						<div class="zagolovki_filtrov">Страна производитель</div>
+						<input type="text" value="Германия" class="input_other" /> <div class="arrow" onclick="JavaScript: make_dsplyd('country_edit1','country_edit2'); if(this.className=='arrow') this.className='arrow_sel'; else this.className='arrow';">&#160;</div>
+							<span id="country_edit1"></span>
+							<span id="country_edit2" style="display:none;">
+								<div>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox"  />Германия</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />Германия</label><br>
+									<label style="cursor: pointer; cursor: hand;"><input type="checkbox" />Германия</label>
+								</div>
+							</span>
+						<br><br><a href="#" class="med">Все предложения по алфавиту</a>
+					</td>
+					<td valign="top" style="padding-top:13px;">
+						<div class="structura"><a href="#">Главная</a> - <a href="#">Украина</a> - <a href="#">Днепропетровская область</a> - <a href="#">Антигистаминные средства</a> - Уролисан</div>
+						<table border="0" cellpadding="3" cellspacing="0" width="100%" class="list_product">
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">1</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">2</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">3</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">4</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">5</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">6</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">7</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">8</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">9</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">10</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+					</table>
+						<div style="padding:10px 0px;text-align:left;"><a href="#" class="pages_product">1</a> <strong class="pages_product_sel">2</strong> <a href="#" class="pages_product">3</a> <a href="#" class="pages_product">4</a> <a href="#" class="pages_product">5</a> <a href="#" class="pages_product">6</a> <a href="#" class="show_all_product">показать все</a></div>
+						<div class="new_ads"><a href="#" target="_blank">Подать объявление</a></div>
+						<div class="ads">
+							<div class="ads_n">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span><em>18+</em>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span><em>18+</em>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n">
+								<img src="baner.jpg">
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+	</div>
+	
+<br>
+<link href="gallerystyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="motiongallery.js"></script>
+<div id="motioncontainer" style="position:relative;overflow:hidden;">
+	<div id="motiongallery" style="position:absolute;left:0;top:0;white-space: nowrap;">
+		<nobr id="trueContainer"><a href="#"><img src="/images/arrow_1.png" border=1></a><a href="#"><img src="/baners/1.png" border=1></a><a href="#"><img src="/baners/1.png" border=1></a><a href="#"><img src="/baners/1.png" border=1></a><a href="#"><img src="/baners/1.png" border=1></a><a href="#"><img src="/baners/1.png" border=1></a><a href="#"><img src="/baners/1.png" border=1></a><a href="#"><img src="/baners/1.png" border=1></a><a href="#"><img src="/images/arrow_2.png" border=1></a></nobr>
+	</div>
+</div>
+<br>
+		<div style="background: rgba(255, 255, 255, 0.8);border:4px solid #9a2878;border-radius: 15px;width:1000px;">
+			<div class="content">
+			<table border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tr>
+					<td valign="middle"><h2 class="h1 med">Отдам даром лекарства</h2></td>
+					<td valign="middle" class="namber_p_q" align="right">Отобразить: <a href="#" class="namber_p_q_med_sel">по 10 шт</a>, <a href="#">по 30шт</a>, <a href="#">по 50шт</a>, <a href="#">все товары</a></td>
+					<td valign="middle" width="60px" align="right"><a href="#" title="отобразить плиткой" style="" onmouseover="document.images['src3'].src='images/sort1.gif';" onmouseout="document.images['src3'].src='images/sort0.gif';" ><img id="src3" src="images/sort0.gif" title="отобразить плиткой" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="отобразить списком" style="" onmouseover="document.images['src4'].src='images/sort4.gif';" onmouseout="document.images['src4'].src='images/sort3.gif';" ><img id="src4" src="images/sort3.gif" title="отобразить списком" /></a></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+					<h2 class="h1 med">Взаимозаменяемые препараты/медикаменты для Уролисан 25мл.</h2>
+					<p>Аналогами Уролесана по фармакологической группе являются <a href="#" class="med">Урохол</a>, <a href="#" class="med">Урохолум</a>, <a href="#" class="med">Энуран</a>, <a href="#" class="med">Арфазетин</a>, <a href="#" class="med">Блемарен</a>, <a href="#" class="med">Канефрон Н</a>, <a href="#" class="med">Галидор</a>, <a href="#" class="med">Фитолизин</a>, <a href="#" class="med">Роватинекс</a>.</p>
+					<p>Структурные аналоги Уролесана по действующему веществу не производятся.</p>
+					</td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td valign="top">
+			<table border="0" cellpadding="3" cellspacing="0" width="100%" class="list_product">
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">1</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">2</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">3</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">4</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">5</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">6</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">7</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">8</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">9</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">10</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">Описание товара</a></nobr> <nobr><a href="#" class="put_off_product_med">Отложить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Получить товар</a></nobr> <nobr><a href="#" class="put_off_product_med">Показать контакты</a></nobr>
+								</td>
+							</tr>
+						</table>
+						</td>
+						<td valign="top" width="200px" align="center">
+						<div class="ads_v">
+							<div class="ads_n_v">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span><em>18+</em>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n_v">
+								<img src="baner_v.jpg">
+							</div>
+							<div class="ads_n_v">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n_v">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span><em>18+</em>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+
+						</div>
+						
+						</table>
+			<div style="padding:10px 0px;text-align:left;"><a href="#" class="pages_product">1</a> <strong class="pages_product_sel">2</strong> <a href="#" class="pages_product">3</a> <a href="#" class="pages_product">4</a> <a href="#" class="pages_product">5</a> <a href="#" class="pages_product">6</a> <a href="#" class="show_all_product">показать все</a></div>
+						<div class="new_ads"><a href="#" target="_blank">Подать объявление</a></div>
+		</div>
+		</div>
+
+	
+	</div>
+	</div>
+	</center>
+	<br><br>
+<div class="sochial_net">
+	<div><img src="images/facebook.png"><br>Facebook</div><div><img src="images/linkedin.png"><br>Linkedin</div><div><img src="images/odnoklassniki.png"><br>Odnoklassniki</div><div><img src="images/twitter.png"><br>Twitter</div><div><img src="images/vkontakte.png"><br>Vkontakte</div><div><img src="images/yahoo-bookmarks.png"><br>Bookmarks</div>
+</div>	
+	
+</body>
+</html>

@@ -1,0 +1,743 @@
+/*общие настройки*/
+body {font-family:Verdana,Geneva,sans-serif; font-size:12px; padding:0px; margin:0px;}
+img {border:0px;padding:0px; margin:0px;}
+img:hover {border:0px;padding:0px; margin:0px;}
+
+/*настройки шрифтов*/
+@font-face {
+    font-family: "wf_SegoeUILight";font-style: normal;font-weight: normal;src: url("../ttf/Light/latest.eot?#iefix") format("embedded-opentype"), url("../ttf/Light/latest.woff") format("woff"), url("../ttf/Light/latest.ttf") format("truetype"), url("../ttf/Light/latest.svg#web") format("svg");
+}
+@font-face {
+    font-family: "MSHPIconsRegular";font-style: normal;font-weight: normal;src: url("../ttf/Normal/2.eot?#iefix") format("embedded-opentype"), url("../ttf/Normal/2.woff") format("woff"), url("../ttf/Normal/2.ttf") format("truetype"), url("../ttf/Normal/2.svg#web") format("svg");
+}
+@font-face {
+    font-family: "wf_SegoeUI";font-style: normal;font-weight: normal;src: url("../ttf/Normal/latest.eot?#iefix") format("embedded-opentype"), url("../ttf/Normal/latest.woff") format("woff"), url("../ttf/Normal/latest.ttf") format("truetype"), url("../ttf/Normal/latest.svg#web") format("svg");
+}
+@font-face {
+	font-family: Bauhaus;src: url(/ttf/2265555.ttf);
+}
+/*Оформление общего фона*/
+.back
+{background:url(/images/world.gif) no-repeat fixed center top 110px;}
+/*Скрытый элемент*/
+.hidden
+{display:none;}
+/*Оформление переключателей в поиске*/
+.arrow
+{padding:2px 5px;height:16px;background:url(/images/arrow_r.png) no-repeat center rgba(154, 40, 120, 0.7);display:inline-block;width:18px;border-radius:8px;border:2px solid #9a2878;}
+/*Оформление переключателей в поиске*/
+.arrow:hover
+{background:url(/images/arrow_d.png) no-repeat center rgba(154, 40, 120, 1);cursor:pointer;cursor:hand;-webkit-transition-duration: 0.5s;-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;transition-duration: 0.5s;border:2px solid #9a2878;}
+/*Оформление переключателей в поиске*/
+.arrow_sel
+{padding:2px 5px;height:16px;background:url(/images/arrow_d.png) no-repeat center rgba(154, 40, 120, 1);cursor:pointer;cursor:hand;-webkit-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;-moz-transition-duration: 0.5s;transition-duration: 0.5s;display:inline-block;width:18px;border-radius:8px;border:2px solid #9a2878;}
+/*Оформление переключателей в поиске*/
+.arrow_sel:hover
+{padding:2px 5px;height:16px;background:url(/images/arrow_r.png) no-repeat center rgba(154, 40, 120, 0.7);display:inline-block;width:18px;
+border-radius:8px;border:2px solid #9a2878;}
+
+/*оформление заголовка*/
+/*Оформление head части*/
+.top_menu
+{background:rgba(0, 0, 0, 0.5);}
+/*Оформление a пункта меню*/
+.top_menu .menu  a
+{color:#fff;font-size:14px;padding:3px 20px 3px 0px;text-decoration:none;}
+/*Состояние hover пункта меню*/
+.top_menu .menu  a:hover
+{text-decoration:underline;}
+/*Оформление первого заголовока*/
+.title_font_header
+{font-family:Bauhaus;font-size:43px;margin:0px;padding:0px;}
+/*Оформление левой части*/
+.color_med
+{color:#9a2878;}
+/*Оформление правой части*/
+.color_obmen
+{color:#098371;}
+/*Оформление названия мобильного оператора*/
+.title_link_name
+{color:#fff;}
+/*Оформление телефонного номера*/
+.title_link_number
+{font-size:25px;}
+/*Оформление второго заголовока*/
+.title_font_header1
+{font-size:35px;color:#fff;font-weight: bold;}
+/*Оформление поиска*/
+.title_search
+{border-radius: 8px;background: rgba(255, 255, 255, 0.8);width:230px;padding:7px 5px;border:0px;}
+
+/*Оформление верхнего управления*/
+/*Оформление основных кнопок*/
+.main_bottom_1, .main_bottom_2
+{width:220px;text-align:center;font-size:18px;color:#fff;border-radius:10px;border:0px;padding:4px 20px 5px 20px;}
+/*Цвета ссылок основных кнопок*/
+.main_bottom_1 a:link,.main_bottom_2 a:link
+{color:white;text-decoration:none;}
+/*Цвета ссылок основных кнопок*/
+.main_bottom_1 a:visited,.main_bottom_2 a:visited
+{color:white;text-decoration:none;}
+/*Оформление правой кнопки*/
+.main_bottom_1
+{background: rgba(154, 40, 120, 0.8);}
+/*Состояние hover правой кнопки*/
+.main_bottom_1:hover {
+background: rgba(154, 40, 120, 1);cursor:pointer;cursor:hand;-webkit-transition-duration: 0.5s;-o-transition-duration: 0.5s;-moz-transition-duration: 0.5s;transition-duration: 0.5s;}
+/*Оформление левой кнопки*/
+.main_bottom_2
+{background: rgba(9, 131, 113, 0.8);}
+/*Состояние hover левой кнопки*/
+.main_bottom_2:hover
+{background: rgba(9, 131, 113, 1);cursor:pointer;cursor:hand;-webkit-transition-duration: 0.5s;-o-transition-duration: 0.5s;-moz-transition-duration: 0.5s;transition-duration: 0.5s;}
+/*Оформление выбора по алфавиту*/
+.select_alfabet
+{width:300px;text-align:center;border-radius: 10px;padding:2px 0px 4px 0px;border:2px solid #9a2878;background: rgba(255, 255, 255, 0.8);height:23px;}
+/*Состояние hover выбора по алфавиту*/
+.select_alfabet:hover
+{background: rgba(255, 255, 255, 1);-webkit-transition-duration: 0.5s;-o-transition-duration: 0.5s;-moz-transition-duration: 0.5s;transition-duration: 0.5s;}
+/*Состояние span выбора по алфавиту*/
+.select_alfabet span
+{text-align:center;cursor:pointer;font-size:18px;color:#9a2878;text-decoration:none;}
+/*Состояние span hover выбора по алфавиту*/
+.select_alfabet span:hover
+{text-decoration:none;}
+/*Заркрытие выпадающего окна выбора по алфавиту*/
+.close_alfabet
+{cursor:pointer;font-size:13px;text-align:center;color:#9a2878;text-decoration:none;}
+/*Расположение текста выбора по алфавиту*/
+.back .main_block .remove_alfabet  .alfabet
+{text-align:center;}
+/*Оформление букв strong выбора по алфавиту*/
+.back .main_block .remove_alfabet  .alfabet strong
+{padding:4px;font-size:15px;font-weight: normal;}
+.back .main_block .remove_alfabet  .alfabet strong:hover
+{cursor:pointer;background:rgba(0, 0, 0, 0.4);border-radius:5px;;color:#fff;}
+
+/*Оформление главных блоков*/
+/*Оформление блока Med*/
+.med_blok
+{border-radius: 10px;background: rgba(154, 40, 120, 0.8); border:0px;}
+/*Оформление submit блока Med*/
+.med_blok .submit
+{border-radius: 8px;background: rgba(255, 255, 255, 0.8);width:150px;padding:2px 5px 3px 5px;color:#fff;cursor:pointer;cursor:hand;border:1px solid #fff;color:#9a2878;font-size:20px;}
+.med_blok .submit:hover {																/*Состояние hover submit блока Med*/
+background: rgba(154, 40, 120, 1);
+color:#fff;
+cursor:pointer;
+cursor:hand;
+border:1px solid #fff;
+-webkit-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;}
+.med_blok .title, .obmen_blok .title {color:#fff;font-size:35px;padding:10px;}			/*Оформление блоков Med и Obmen*/
+.med_blok  span, .obmen_blok  span {color:#fff;font-size:20px;padding:10px;}				/*Оформление span блоков Med и Obmen*/
+.med_blok .input{																		/*Оформление input блока Med*/
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.8);
+width:335px;
+padding:4px 5px;
+border:0px;
+color:#9a2878;
+font-size:20px;}
+.obmen_blok {border-radius: 10px;background: rgba(9, 131, 113, 0.8); border:0px;}		/*Оформление блока Obmen*/
+.obmen_blok .submit {																	/*Оформление submit блока Obmen*/
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.8);
+width:150px;
+padding:2px 5px 3px 5px;
+color:#fff;
+cursor:pointer;
+cursor:hand;
+border:1px solid #fff;
+color:#098371;
+font-size:20px;}
+.obmen_blok .submit:hover {																/*Состояние hover submit блока Obmen*/
+background: rgba(9, 131, 113, 1);
+color:#fff;
+cursor:pointer;
+cursor:hand;
+border:1px solid #fff;}
+.obmen_blok .input{																		/*Оформление input блока Med*/
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.8);
+width:335px;
+padding:4px 5px;
+border:0px;
+color:#098371;
+font-size:20px;}
+
+/*Оформление основной части*/
+.main_block{width:1000px;}																/*Размер главного блока*/
+.first_block{																			/*Оформление вложенного блока*/
+background: rgba(255, 255, 255, 0.8);
+border:4px solid #888888;
+border-radius: 15px;
+width:1000px;
+min-height: 400px;
+}
+.back  .content  {padding:6px 0px;min-height: 400px;}											/*Размещение текста*/
+.back  ul, .content ul{list-style:none;padding:0;}												/*Оформление ul списка в меню*/
+.back .top_menu  ul li, .content ul li{																		/*Оформление ul li списка в меню*/
+position:relative;
+}
+.back  ul li:hover, .back .content ul li:hover {															/*Оформление ul li списка в меню*/
+background: rgba(204, 204, 204, 1);
+-webkit-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;}
+.back  ul li.active, .back.content ul li.active{background:#ccc;}											/*Оформление активного выбора*/
+.content ul li a{color:black;text-decoration:none;font-size:15px;padding:10px;display:block;}/*Оформление ul li а списка в меню */
+.content ul li a:hover{text-decoration:none;}												/*Состояние hover списка в меню*/
+.content p {text-align: justify;margin:3px;}												/*Оформление р контента*/
+.content a {text-decoration:none;}														/*Оформление а контента*/
+.content a:focus{																		/*Состояние hover а контента*/
+-webkit-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;
+text-decoration:none;}
+.back .first_block .content .h1 {																			/*Оформление h1 заголовка*/
+padding:0px;
+margin:0px;
+font-size:30px;
+font-family: wf_SegoeUILight, wf_SegoeUI, Tahoma, Verdana, Arial, sans-serif;
+font-weight: 300;
+line-height: 0.9;
+text-align:left;}
+.content .t_name{color: red;}															/*Цвет названия таблицы в заголовке при импорте данных*/
+.content .med {color:#9a2878;}															/*Цвет заголовка отдачи лекарств*/
+.content .obmen {color:#098371;}															/*Цвет заголовка поиска лекарств*/
+.content a.med:hover {border-bottom: 1px dotted #9a2878;}								/*Состояние hover заголовка отдачи лекарств*/
+.content a.obmen:hover {border-bottom: 1px dotted #098371;}								/*Состояние hover заголовка поиска лекарств*/
+.content .input_other {																	/*Оформление поле ввода данных*/
+width:200px;
+background: rgba(0, 0, 0, 0.8);
+border-radius: 8px;
+color:#fff;
+border:none;
+padding:4px 10px;
+text-align:left;
+display:inline-block;}
+.content .input_other:hover {															/*Состояние hover поле ввода данных*/
+color:#fff;
+background: rgba(0, 0, 0, 1);
+-webkit-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;}
+.content .zagolovki_filtrov {color:#9a2878;font-size:14px;padding:7px 0px 3px 0px;}		/*Оформление заголовка фильтра*/
+.content .zagolovki_filtrov_obmen {color:#098371;font-size:14px;padding:7px 0px 3px 0px;}/*Оформление заголовка фильтра отдачи*/
+.content .zagolovki_filtrov_reg {color:#000;font-size:14px;padding:7px 0px 3px 0px;}		/*Оформление заголовка регистрационной формы*/
+.content .zagolovki_filtrov .input_date_do, .content .input_date_do {						/*Оформление заголовка фильтра и вводы даты*/
+width:145px;
+background: rgba(0, 0, 0, 0.6);
+border-radius: 8px;
+color:#fff;
+border:none;
+padding:4px 0px;
+text-align:center;}
+.content .zagolovki_filtrov .input_date_do:hover, .content .input_date_do:hover {			/*Состояние hover заголовка фильтра и вводы даты*/
+background: rgba(0, 0, 0, 1);
+-webkit-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;}
+
+/*Оформление рабочих таблиц*/
+.content .list_product
+{border-bottom: 1px dotted #9a2878;text-align: center}
+/*Оформление рабочих таблиц на главных страницах с отступом слева*/
+.content .main_list_product_left
+{border-bottom: 1px dotted #9a2878;text-align: left}
+/*Оформление рабочих таблиц с отступом слева*/
+.content .list_product_left
+{border-bottom: 1px dotted #9a2878;text-align: left}
+/*Оформление th рабочих таблиц без сортировки*/
+.content .list_product th.unsort
+{border:2px outset #ccc;}
+/*Оформление th рабочих таблиц с сортировкой в низ*/
+.content .list_product th.down
+{background:white; border: inset;}
+/*Оформление th рабочих таблиц с сортировкой в верх*/
+.content .list_product th.up
+{background:lightgrey; border: inset;}
+/*Оформление td рабочих таблиц*/
+.content .list_product td,.content .list_product_left td,.content .main_list_product_left td
+{border-bottom: 1px dotted #9a2878;}
+.back .main_block .first_block .content .list_product_left td:hover, .back .main_block .first_block .content .list_product_left tr:hover,.back .main_block .first_block .content .list_product td:hover, .back .main_block .first_block .content .list_product tr:hover
+{background: rgba(0, 0, 0, 0.1);}
+/*Оформление input рабочих таблиц*/
+.content .list_product tr td input
+{width: 100%}
+/*Оформление блока Med*/
+.content .list_product .code_med
+{color:#9a2878;}
+/*Оформление блока Obmen*/
+.content .list_product .code_obmen
+{color:#098371;}
+/*Оформление блока Free*/
+.content .list_product .code_free
+{color:#000;}
+/*Оформление порядкового номера*/
+.content .list_product .number_product, .content .list_product_left .number_product, .content .main_list_product_left .number_product
+{background: rgba(154, 40, 120, 1);border-radius:8px 0px 0px 8px;color:#fff;padding:5px 2px 5px 2px;}
+/*Оформление ссылок в таблицах*/
+.content .list_product .descr_product_med , .content .main_list_product_left .descr_product_med
+{color:#9a2878;font-size:13px;text-decoration:none;background: none;}
+.content .list_product .descr_product_med:hover {border-bottom: 1px dotted #9a2878;}		/*Состояние hover формления ссылок в таблицах*/
+.content .list_product .descr_product_obmen {												/*Оформление ссылок в таблицах*/
+color:#098371;
+font-size:13px;
+text-decoration:none;
+background: none;}
+.content .list_product .descr_product_obmen:hover {border-bottom: 1px dotted #098371;}		/*Состояние hover формления ссылок в таблицах*/
+.content .CheckBoxSingleClass, .content .CheckBoxTotalClass{								/*Оформление не нажатого checkbox*/
+    background:url(/images/UnCheck.png) no-repeat;
+    padding: 4px 2px 3px 25px;
+    display: inline-block;
+}
+/*.content .CheckBoxSingleClass:hover, .content .CheckBoxTotalClass:hover{					/*Состояние hover checkbox
+    text-decoration: none;
+	cursor:pointer;
+	cursor:hand;
+	background: url(/images/Check.png) no-repeat;
+	-webkit-transition-duration: 0.5s;-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}*/
+.content .CheckBoxSingleClassSelected, .content .CheckBoxTotalClassSelected{				/*Оформление нажатого checkbox*/
+    background: url(/images/Check.png) no-repeat;
+	padding: 4px 2px 3px 25px;
+    display: inline-block;
+}
+
+/*.content .CheckBoxSingleClassSelected:hover,
+.content .CheckBoxTotalClassSelected:hover{												/*Состояние hover checkbox
+    text-decoration: none;
+	cursor:pointer;
+	cursor:hand;
+	background: url(/images/UnCheck.png) no-repeat;
+	-webkit-transition-duration: 0.5s;-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}*/
+.content .RadioBoxClass{																	/*Оформление не нажатого radiobox*/
+    background:url(/images/UnRadio.png) no-repeat;
+    padding: 4px 4px 6px 25px;
+    display: inline-block;
+}
+.content .RadioBoxClassDisabled{															/*Оформление отключенного radiobox*/
+    background:url(/images/DisRadio.PNG) no-repeat;
+    padding: 4px 4px 6px 25px;
+    display: inline-block;
+}
+/*.content .RadioBoxClass:hover{															/*Состояние hover radiobox
+    text-decoration: none;
+	cursor:pointer;
+	cursor:hand;
+	background: url(/images/Radio.png) no-repeat;
+	-webkit-transition-duration: 0.5s;-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}*/
+
+.content .RadioBoxClassSelected{															/*Оформление нажатого radiobox*/
+    background: url(/images/Radio.png) no-repeat;
+	padding: 4px 4px 6px 25px;
+    display: inline-block;
+}
+/*.content .RadioBoxClassSelected:hover{													/*Состояние hover radiobox
+    text-decoration: none;
+	cursor:pointer;
+	cursor:hand;
+	background: url(/images/Unradio.png) no-repeat;
+	-webkit-transition-duration: 0.5s;-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}*/
+.content .button{																		/*Псевдокнопка*/
+	background: white;
+	border:2px groov grey;
+	border-radius:2px;
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+
+}
+.content .button:hover{																		/*Псевдокнопка*/
+	background: lightgrey;
+	border:2px groov grey;
+	cursor:pointer;
+	cursor:hand;
+	border-radius:2px;
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+/*оформление ссылки под кнопку*/
+.back .main_block .first_block  .content .alfabet .put_off_product_med {color:#9a2878;padding: 0 5px;margin:1px 0px;font-size:13px;text-decoration:none;border-radius:10px;border:2px solid #9a2878;background: rgba(255, 255, 255, 0.3);line-height: 2; box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.5);}
+/*состояния hover оформления ссылки под кнопку*/
+.back .main_block .first_block  .content .alfabet .put_off_product_med:hover {color:#fff;border:2px solid #9a2878;background: rgba(154, 40, 120, 0.5);box-shadow: inset 0 0 5px rgba(154, 40, 120, 1);-webkit-transition-duration: 0.5s;-o-transition-duration: 0.5s;-moz-transition-duration: 0.5s;transition-duration: 0.5s;cursor:pointer;cursor:hand;}
+
+
+.content .pages_product {																/*Оформление неактивных переключвтелей между страницами*/
+background: rgba(154, 40, 120, 1);
+border-radius:8px;
+color:#fff;
+padding:3px 7px 4px 7px;
+text-decoration:none;
+border:2px solid #fff;
+line-height:2.3;}
+.content .pages_product:hover {															/*Состояние hover переключвтеля между страницами*/
+background: rgba(255, 255, 255, 1);
+color:#9a2878;
+text-decoration:none;
+border:2px solid #9a2878;
+-webkit-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;}
+.content .pages_product_sel {															/*Оформление активного переключвтеля между страницами*/
+background: rgba(255, 255, 255, 1);
+color:#9a2878;
+text-decoration:none;
+border:2px solid #9a2878;
+border-radius:8px;
+padding:3px 7px 4px 7px;}
+.content .pages_product_sel:hover {														/*Состояние hover активного переключвтеля между страницами*/
+background: rgba(154, 40, 120, 1);
+border-radius:8px;
+color:#fff;
+padding:3px 7px 4px 7px;
+text-decoration:none;
+border:2px solid #fff;
+-webkit-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;}
+.content .ads {padding:5px;}																/*оформление блока рекламы на странице ввода медикоментов*/
+.content .ads .ads_n {
+display:inline-block;
+height: 80px;
+width: 300px;
+padding:10px 0px;
+text-align:left;}
+.content .ads .ads_n em {
+float:right;
+text-align:center;
+background: rgba(154, 40, 120, 1);
+border-radius:15px;
+color:#fff;
+padding:5px 2px 7px 2px;
+font-style:normal;
+border:1px solid #fff;
+font-size:11px;
+margin-top:-20px;}
+.content .ads .ads_n a {
+color:#9a2878;
+font-size:14px;
+padding:0px;
+text-align:left;}
+.content .ads .ads_n a:hover {
+color:#9a2878;
+font-size:14px;
+padding:0px;
+text-align:left;
+border-bottom: 1px dotted #9a2878;}
+.content .ads .ads_n span {
+color:#888;
+display:block;
+font-size:11px;
+overflow:hidden;
+height:45px;
+line-height: 0.9;
+text-align:left;
+padding:3px 0px;}
+.content .ads .ads_n div {
+color:#000;
+display:block;
+font-size:12px;
+padding:0px 0px 3px 0px;
+text-align:left;}
+
+/*Оформление блока рекламы*/
+.blocks{background: rgba(0, 0, 0, 0.5);text-align:center;}								/*Оформление главного рекламного блока*/
+.block_height{height:75px;}																/*Высота блоков*/
+.bloks_ads {																				/*Построение рекламных блоков в контейнере*/
+width:200px;
+height:75px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+display: inline-block;
+margin:0px 7px;
+font-size:20px;
+color:#fff;
+border:1px solid #000;}
+.bloks_ads_arrow {																		/*Построение рекламного контейнера*/
+width:50px;
+display: inline-block;
+margin:0px 7px;
+font-size:60px;
+color:#000;
+height:75px;}
+.bloks_ads_arrow:hover{																	/*Состояние hover рекламного контейнера*/
+cursor:pointer;
+cursor:hand;
+-webkit-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;
+color:#000;}
+.bloks_ads_arrow p {margin:0px;}															/*Состояние p рекламного контейнера*/
+
+
+/*Оформление слоганов*/
+.footter_prim{																			/*Оформление блока слоганов*/
+background: rgba(255, 255, 255, 0.8);
+border:4px solid #888;
+border-radius: 15px;
+width:800px;}
+.footter_prim_text{font-size:20px;color:#098371;padding:10px;}							/*Оформление первого текста*/
+.footter_prim_text1{font-size:15px;text-align:center;padding:10px;}						/*Оформление второго текста*/
+
+/*Оформление блока соцсетей*/
+.sochial_net {height:60px;background: rgba(0, 0, 0, 0.2);text-align:center;}				/*Оформление блока соцсетей*/
+.sochial_net div {																		/*Оформление div блока соцсетей*/
+display: inline-block;
+height:58px;
+width:80px;
+font-size:10px;
+padding:0px 3px;
+color:#888;
+text-align:center;
+border:1px dotted #ccc;}
+.sochial_net .s_web_a  {																		/*Оформление div блока соцсетей*/
+text-align:center;
+border:1px dotted #000;
+color:#000;
+box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;
+}
+.sochial_net a {																		/*Оформление div блока соцсетей*/
+color:#888;
+text-align:center;
+text-decoration:none;
+}
+.sochial_net .s_web a {																		/*Оформление div блока соцсетей*/
+color:#ccc;
+text-align:center;
+text-decoration:none;
+}
+.sochial_net .s_web_a a {																		/*Оформление div блока соцсетей*/
+color:#888;
+text-align:center;
+text-decoration:none;
+}
+
+.sochial_net a:hover, .sochial_net .s_web a:hover {																		/*Оформление div блока соцсетей*/
+color:#000;
+text-align:center;
+text-decoration:none;
+}
+.sochial_net div:hover {																	/*Состояние hover div блока соцсетей*/
+cursor:pointer;
+cursor:hand;
+border:1px dotted #000;
+color:#000;
+box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;}
+.sochial_net img {padding-top:7px;}														/*Оформление img блока соцсетей*/
+
+.back .med_blok .search_pad {
+	width:335px;
+	color:#9a2878;
+	font-size:20px;
+	background:rgba(255, 255, 255, 0.8);
+	position:absolute;
+	display:block;
+	max-height:300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top:-5px;
+	margin-left:-1px;
+	border-radius:0px 0px 8px 8px;
+	border-right:1px solid #888;
+	border-bottom:1px solid #888;
+	border-left:1px solid #888;
+ }
+.back .med_blok .search_pad li {
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: 2px;
+	padding: 5px;
+	max-height: 250px;
+	-webkit-overflow-scrolling: touch;}
+.back .med_blok .search_pad li:hover {
+	cursor:pointer;
+	cursor:hand;
+	background-color: #3875d7;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+	background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+	background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+	background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+	background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+	color: #fff;
+}
+.back .med_block .search_pad ul{
+	margin: 0;
+	padding: 0;
+ }
+.back .obmen_blok .search_pad {
+	width:335px;
+	color:#098371;
+	font-size:20px;
+	background:rgba(255, 255, 255, 0.8);
+	position:absolute;
+	display:block;
+	max-height:300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top:-5px;
+	margin-left:-1px;
+	border-radius:0px 0px 8px 8px;
+	border-right:1px solid #888;
+	border-bottom:1px solid #888;
+	border-left:1px solid #888;
+ }
+.back .obmen_blok .search_pad li {
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: 2px;
+	padding: 5px;
+	max-height: 250px;
+	-webkit-overflow-scrolling: touch;}
+.back .obmen_blok .search_pad li:hover {
+	cursor:pointer;
+	cursor:hand;
+	background-color: #3875d7;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+	background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+	background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+	background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+	background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+	color: #fff;
+ }
+.back .obmen_blok .search_pad ul{
+	margin: 0;
+	padding: 0;
+ }
+
+.back .top_menu .search_pad {
+  background:#E5E5E5;
+  position:absolute;
+  display:block;
+  font-size:15px;
+  max-height:300px;
+  width:240px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top:-5px;
+  margin-left:-1px;
+  border-radius:0px 0px 8px 8px;
+  border-right:1px solid #888;
+  border-bottom:1px solid #888;
+  border-left:1px solid #888;
+  }
+.back .top_menu .search_pad li {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 2px;
+  padding: 5px;
+  max-height: 250px;
+  -webkit-overflow-scrolling: touch;}
+.back .top_menu .search_pad li:hover {
+  cursor:pointer;
+  cursor:hand;
+  background-color: #3875d7;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+  background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+  color: #fff;
+  }
+.back .top_menu .search_pad ul{
+  margin: 0;
+  padding: 0;}
+
+.back .main_block .first_block .content .search_pad {
+  background:rgba(0, 0, 0, 0.8);
+  position:absolute;
+  display:block;
+  font-size:15px;
+  max-height:300px;
+  width:318px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top:-1px;
+  margin-left:1px;
+  border-radius:0px 0px 8px 8px;
+  }
+.back .main_block .first_block .content .search_pad li {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 2px;
+  padding: 5px;
+  max-height: 250px;
+  color: #fff;
+  -webkit-overflow-scrolling: touch;}
+.back .main_block .first_block .content .search_pad li:hover {
+  cursor:pointer;
+  cursor:hand;
+  background-color: #3875d7;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+  background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+  color: #fff;
+  }
+.back .main_block .first_block .content .search_pad ul{
+  margin: 0;
+  padding: 0;}
+.back .main_block .first_block .content .directory {color:#000;padding:0px 3px;line-height:1.0;}
+.back .main_block .first_block .content .directory:hover {color:#FFFFFF;background:rgba(9, 131, 113, 0.8);}
+.back .main_block .first_block .content .alfabet td {text-align:center;}
+.back .main_block .first_block .content .alfabet a {color:#000;font-size:15px;padding:4px 20px 5px 20px;}
+.back .main_block .first_block .content .alfabet a:hover {background:rgba(0, 0, 0, 0.4);padding:4px 20px 5px 20px;border-radius:5px;box-shadow:0 -28px 75px -40px rgba(0, 0, 0, 0.8) inset, 0 28px 75px -40px rgba(0, 0, 0, 0.8) inset;color:#fff;}
+
+.img_hover_card{
+  position: absolute;
+  z-index: 999;
+
+  opacity: 0;
+
+  min-height: 50px;
+  max-height: 200px;
+
+  background: #fff;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}

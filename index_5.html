@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+	<title>медикаменты</title>
+	<META NAME="description" CONTENT="медикаменты">
+	<META NAME="keywords" CONTENT="медикаменты">
+	<link href="index.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+	function make_dsplyd(id1,id2){
+		if(document.getElementById(id1).style.display=='none'){
+			document.getElementById(id1).style.display='inline';
+			document.getElementById(id2).style.display='none';	
+			}
+		else{
+			document.getElementById(id1).style.display='none';
+			document.getElementById(id2).style.display='inline';	
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="top_menu">
+		<table border="0" cellpadding="0" cellspacing="0" width="1000px" align="center">
+			<tr>
+				<td width="230px" align="center"><p style="font-family:Bauhaus;font-size:43px;margin:0px;padding:0px;"><span style="color:#9a2878;">Med</span><span style="color:#098371;">Obmen</span></p></td>
+				<td align="left" style="color:#fff;">mts: (+38050) <span style="font-size:25px;">777-77-77</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kyivstar: (+38067) <span style="font-size:25px;">777-77-77</span></td>
+				<td align="right"><a href="#"><img src="images/mail.gif"></a>&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/map.gif"></a></td>
+			</tr>
+			<tr>
+				<td style="font-size:35px;color:#fff;font-weight: bold;" align="center">МедОбмен</td>
+				<td align="left" class="menu"><a href="#">О сервисе</a><a href="#">Услуги</a><a href="#">Контакты</a><a href="#">Личный кабинет</a><a href="#">Выход</a></td>
+				<td align="right"><input style="border-radius: 8px;background: rgba(255, 255, 255, 0.8);width:230px;padding:7px 5px; border:0px;" value="Поиск" onfocus="if(this.value=='Поиск') this.value='';" onblur="if(this.value==''){ value='Поиск';}" /></td>
+			</tr>
+		</table>
+	</div>
+	<center>
+	<div style="background: url(images/world.gif) no-repeat fixed center top 110px;">
+	<div style="width:1000px;">
+		<br>
+		<table border="0" cellpadding="1" cellspacing="1" width="100%">
+			<tr>
+				<td width="230px"><div class="main_bottom_2">Предложить лекарство</div></td>
+				<td>
+								
+					<div class="select_alfabet">
+					 <span id="alfabet_edit1"><a href="JavaScript: make_dsplyd('alfabet_edit1','alfabet_edit2')"> Все предложения по алфавиту </a>
+					 </span>
+					 <span id="alfabet_edit2" style="display:none;">
+						<div style="background: rgba(255, 255, 255, 0.9);border-radius: 10px;line-height: 2;position:relative;border:2px solid #9a2878;">
+							<div>
+							<strong>A(41)</strong>	<strong>B(44)</strong>	<strong>C(31)</strong>	<strong>D(20)</strong>	<strong>E(11)</strong>	<strong>F(19)</strong>	<strong>G(37)</strong>	<strong>H(35)</strong>	<strong>I(7)</strong>	<strong>J(11)</strong>	<strong>K(54)</strong>	<strong>L(25)</strong>	<strong>M(53)</strong>	<strong>N(19)</strong>	<strong>O(9)</strong>	<strong>P(21)</strong>	<strong>Q(1)</strong>	<strong>R(28)</strong>	<strong>S(46)</strong>	<strong>T(28)</strong>	<strong>U(6)</strong>	<strong>V(23)</strong>	<strong>W(19)</strong>	<strong>X(1)</strong>	<strong>Y(10)</strong>	<strong>Z(13)</strong>
+							</div>
+							<a style="font-size:12px;" href="JavaScript: make_dsplyd('alfabet_edit1','alfabet_edit2')">закрыть выбор медикаментов по алфавиту</a>
+						</div>
+					 </span>
+					</div>
+				</td>
+				<td align="right"><div class="main_bottom_1">Получить лекарство</div></td>
+			</tr>
+		</table>
+
+<style>
+.content .switcher {
+    width: 124px;
+    height: 49px;
+    position: relative;
+}
+.content .switcher * {
+    transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.content .switcher .sw_btn {
+    background: url(images/btn.png) 0% 0% no-repeat;
+    width: 49px;
+    height: 49px;
+    display: block;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+.content .switcher .bg { background: url(images/bg-off.png) 0% 0% no-repeat;}
+.content .switcher input.switcher-value:checked ~ .sw_btn {margin-left:68px;}
+.content .switcher input.switcher-value:checked ~ .sw_btn ~ .bg { background: url(images/bg-on.png) 0% 0% no-repeat;}
+.content .switcher input.switcher-value {display: none;}
+.content .switcher .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+</style>		
+	
+
+		<div style="background: rgba(255, 255, 255, 0.8);border:4px solid #098371;border-radius: 15px;width:1000px;">
+			<div class="content">
+			<table border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tr>
+					<td valign="middle">
+						<h1 class="h1 obmen">Все мои препараты (12шт)</h1>
+					</td>
+					<td valign="middle" class="namber_p_q" align="right">Отобразить: <a href="#" class="namber_p_q_med_sel">по 10 шт</a>, <a href="#">по 30шт</a>, <a href="#">по 50шт</a>, <a href="#">все товары</a></td>
+					<td valign="middle" width="60px" align="right"><a href="#" title="отобразить плиткой" style="" onmouseover="document.images['src1'].src='images/sort1.gif';" onmouseout="document.images['src1'].src='images/sort0.gif';" ><img id="src1" src="images/sort0.gif" title="отобразить плиткой" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/sort4.gif" title="способ отображения - списком" /></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="3" cellspacing="0" width="100%" class="list_product">
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">1</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">редактирование товара</a></nobr> 
+								</td>
+								<td width="100px">
+		<div class="switcher">
+                <input id="sw1" type="checkbox" class="switcher-value">
+                <label for="sw1" class="sw_btn"></label>
+                <div class="bg"></div>
+        </div>
+
+								</td>
+								<td width="100px">
+		<div class="switcher">
+                <input id="sw2" type="checkbox" class="switcher-value">
+                <label for="sw2" class="sw_btn"></label>
+                <div class="bg"></div>
+        </div>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">2</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">редактирование товара</a></nobr> 
+								</td>
+								<td width="100px"></td>
+								<td width="100px"></td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">3</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">редактирование товара</a></nobr> 
+								</td>
+								<td width="100px"></td>
+								<td width="100px"></td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">4</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">редактирование товара</a></nobr> 
+								</td>
+								<td width="100px"></td>
+								<td width="100px"></td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">5</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">редактирование товара</a></nobr> 
+								</td>
+								<td width="100px"></td>
+								<td width="100px"></td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">6</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">редактирование товара</a></nobr> 
+								</td>
+								<td width="100px"></td>
+								<td width="100px"></td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">7</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">редактирование товара</a></nobr> 
+								</td>
+								<td width="100px"></td>
+								<td width="100px"></td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">8</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">редактирование товара</a></nobr> 
+								</td>
+								<td width="100px"></td>
+								<td width="100px"></td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">9</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">редактирование товара</a></nobr> 
+								</td>
+								<td width="100px"></td>
+								<td width="100px"></td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><div class="number_product">10</div></td>
+								<td align="center" style="font-size:11px;">
+									01.09.2013<br>
+									12:57<br>
+									<span class="code_med">1234</span>
+								</td>
+								<td align="center" valign="middle"><img src="images/facebook.png"></td>
+								<td>
+									Уролесан 25мл, Производитель: нет данных, Годен до 01.01.2014, Количество: 1 упаковка, Форма выпуска: капли, Днепропетровск.<br>
+									<nobr><a href="#" class="descr_product_med">редактирование товара</a></nobr> 
+								</td>
+								<td width="100px"></td>
+								<td width="100px"></td>
+							</tr>
+					</table>
+					<div style="padding:10px 0px;text-align:left;"><a href="#" class="pages_product">1</a> <strong class="pages_product_sel">2</strong> <a href="#" class="pages_product">3</a> <a href="#" class="pages_product">4</a> <a href="#" class="pages_product">5</a> <a href="#" class="pages_product">6</a> <a href="#" class="show_all_product">показать все</a></div>
+			<table border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tr>
+					<td valign="top" align="left">
+						<div class="ads">
+							<div class="ads_n">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span><em>18+</em>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n">
+								<a href="#">Автомобили на прокат в Киеве</a>
+								<span>Мы передаем аренду машин в Киеве на основании договоров проката. Для того чтобы воспользоваться услугой и не остаться без автомобиля - заранее закажите машину.</span><em>18+</em>
+								<div>http://lion-avtoprokat.com.ua/</div>
+							</div>
+							<div class="ads_n">
+								<img src="baner.jpg">
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+	</div>
+		<br>
+		<div style="background: rgba(0, 0, 0, 0.5);text-align:center;">
+			<table border="0" cellpadding="0" cellspacing="0" align="center" style="height:75px;">
+				<tr height="75px">
+					<td class="bloks_ads_arrow" align="right" valign="middle"><p>«</p></td>
+					<td><div class="bloks_ads"><br>Реклама</div><div class="bloks_ads"><br>Реклама</div><div class="bloks_ads"><br>Реклама</div><div class="bloks_ads"><br>Реклама</div></td>
+					<td class="bloks_ads_arrow" align="left" valign="middle"><p>»</p></td>
+				</tr>
+			</table>
+	</div>
+	</div>
+	</center><br>
+<div class="sochial_net">
+	<div><img src="images/facebook.png"><br>Facebook</div><div><img src="images/linkedin.png"><br>Linkedin</div><div><img src="images/odnoklassniki.png"><br>Odnoklassniki</div><div><img src="images/twitter.png"><br>Twitter</div><div><img src="images/vkontakte.png"><br>Vkontakte</div><div><img src="images/yahoo-bookmarks.png"><br>Bookmarks</div>
+</div>	
+	
+</body>
+</html>

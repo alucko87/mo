@@ -1,0 +1,9 @@
+<?
+	session_start();
+	if(isset($_POST['param1'])){
+		$_SESSION['piece_name']=$_POST['param1'];
+	}
+	if(isset($_POST['param2'])){
+		$_SESSION['type']=$_POST['param2'];
+	}
+?>
