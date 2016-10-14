@@ -14,6 +14,10 @@ class View
 		if(is_array($data)) {
 			extract($data);
 		}
+
+		if (isset($model['error'])) {
+			$error = $model['error'];
+		}
 		
 		include 'application/views/'.$template_view;
     }

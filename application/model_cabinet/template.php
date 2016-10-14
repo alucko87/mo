@@ -1,5 +1,6 @@
 <?php
-require_once '/home/rudana/domains/medobmen.com.ua/public_html/application/defines.php';
+require_once __DIR__ . '/../defines.php';
+// require_once '/home/rudana/domains/medobmen.com.ua/public_html/application/defines.php';
 
 class Model_template extends Model
 {

@@ -125,6 +125,8 @@ function scan_data(data){
 //функция поиска
 function search(search_value,targets_object){
 	$(".search_pad").remove();
+	var id_field_name = "id_" + $(targets_object).attr('name');//определяем поле с id
+	$("[name=" + id_field_name + "]").val('');//удаляем номер id, если он был
 	$.ajax({
 		url: "/application/ajax/search.php",
 		type: "POST",
@@ -133,7 +135,14 @@ function search(search_value,targets_object){
 		success: function(data){
 			var s = "<div class='search_pad'><ul class='search_list' style='text-align:left;'>";
             $.each(data, function(key, val) {
-				s=s+"<li>"+val+"</li>";
+            	//использован встроенный массив для вывода города, области и страны через запятую:
+            	s=s+"<li id=\""+val[0]+"\">"+val[1];
+            	for (var i = 2; i < val.length; i++) {
+            		if (val[i]) {
+	            		s=s+", "+val[i];
+	            	}
+            	};
+        		s=s+"</li>";
             });
 			s=s+"</ul></div>";
 			$(targets_object).after(s);
@@ -160,6 +169,8 @@ function search(search_value,targets_object){
 					}
 					else{
 						$(targets_object).val($(targets).text());
+						//заполнение скрытого поля с id
+						$("[name=" + id_field_name + "]").val($(targets).attr('id'));
 						$(".search_pad").remove();
 					}
 				}
@@ -458,6 +469,43 @@ $('th').bind('click',function(){
 		targets_object="#search_target5";
 		return search(search_value,targets_object);
 	});
+//автозаполнение верхнее
+	$('#search_target6').bind('keyup', function (){
+		var targets=$(this);
+		search_value=$(targets).val();
+		targets_object="#search_target6";
+		return search(search_value,targets_object);
+	});
+//автозаполнение поля "Страна" в offer_view.php
+	$('#search_target7').bind('keyup', function (){
+		var targets=$(this);
+		search_value=$(targets).val();
+		targets_object="#search_target7";
+		return search(search_value,targets_object);
+	});
+//автозаполнение поля "Город" в offer_view.php
+	$('#search_target8').bind('keyup', function (){
+		var targets=$(this);
+		search_value=$(targets).val();
+		targets_object="#search_target8";
+		return search(search_value,targets_object);
+	});
+//автозаполнение поля "Производитель" в offer_view.php
+	$('#search_target9').bind('keyup', function (){
+		var targets=$(this);
+		search_value=$(targets).val();
+		targets_object="#search_target9";
+		return search(search_value,targets_object);
+	});
+
+//автозаполнение поля "Лекарственная форма" в offer_view.php
+	$('#search_target10').bind('keyup', function (){
+		var targets=$(this);
+		search_value=$(targets).val();
+		targets_object="#search_target10";
+		return search(search_value,targets_object);
+	});
+
 //переключение отображения количества строк
 	$('.count_string').bind('change', function(){
 		var clicked = $(this).val();
@@ -684,3 +732,113 @@ $('th').bind('click',function(){
 			}
 		});
 	});*/
+
+function showFile(e) {
+	var file = e.target.files[0];
+	// if (!file.type.match('image.*')) {
+	// 	window.alert("Выбранный файл не является изображением");
+	// 	return;
+	// }
+	var fr = new FileReader();
+	fr.onload = (function(theFile) {
+		return function(e) {
+			document.getElementById('file_preview').setAttribute('src', e.target.result);
+		};
+	})(file);
+
+	fr.readAsDataURL(file);
+}
+
+$('body').on('change', '[name=med_image]', showFile);
+
+$('body').on('click', '#del', function(){
+
+	var new_input = $('[name=med_image]').clone();
+	$('[name=med_image]').remove();
+	$('#med_image label').prepend(new_input);
+	$("#file_preview").attr('src', 'http://mo/img/no_image.png');
+
+});
+
+function loadAjax(uri, method, data, callback) {
+
+	method = method || 'GET';
+	data = data || {};
+
+	return $.ajax({
+		type: method,
+		url: uri,
+		// cache: true,
+		dataType: 'json',
+		processData: false,//настройка для отправки файлов на сервер
+		contentType: false,//настройка для отправки файлов на сервер
+		data: data,
+		success: callback
+	});
+
+}
+
+$('body').on('submit', '#offer', function() {
+
+	var msg = new FormData($('#offer')[0]);
+
+	var callback = function(serverResponse) {
+		if (!serverResponse.success) {
+			console.log(serverResponse);
+			return false;
+		} else {
+
+			$('.invalidInput').removeAttr('class');
+			$('.errMsg').text('');
+
+			if (serverResponse.data.redirect) {
+				window.location = serverResponse.data.redirect;
+			}
+
+			if (typeof serverResponse.data.error === "object") {
+				var error = serverResponse.data.error;
+
+				for (input_name in error) {
+					$('[id=' + input_name + ']').attr('class', 'invalidInput');
+					$('[id=' + input_name + ']~.error .errMsg').text(error[input_name]);
+					$('[type=text][name=' + input_name + ']').attr('class', 'invalidInput');
+					$('[name=' + input_name + ']+.error .errMsg').text(error[input_name]);
+				}
+			}
+		}
+	}
+
+	loadAjax('/offer', 'POST', msg, callback);
+
+	return false;
+	
+});
+
+
+// $('body').on('click', '.menuItem', function(event) {
+
+// 	if (event.target.nodeName != 'A') {
+// 		return false;
+// 	}
+
+// 	var uri = event.target.getAttribute('href');
+
+// 	if (compareWithCurUri(uri)) {
+// 		return false;
+// 	}
+
+// 	history.pushState({'pageUri': uri}, null, uri);
+// 	loadContent('.contentBlock', uri);
+
+// 	return false;
+
+// });
+
+
+
+// if (serverResponse.data['html']) {
+// 	$(containerSelector).html(serverResponse.data['html']);
+// }
+// if (serverResponse.data['redirect']) {
+// 	window.location = serverResponse.data['redirect'];
+// }
