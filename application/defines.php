@@ -3,9 +3,9 @@ define('DEBUG', false);
 
 define('BASE_ADDRESS', 'http://'.$_SERVER['SERVER_NAME'].'/');
 
-define('DB_NAME', 'mo');
-define('DB_USER_NAME', 'root');
-define('DB_PASSWORD',  'my520228');
+define('DB_NAME', 'u980266495_mo');
+define('DB_USER_NAME', 'u980266495_artem');
+define('DB_PASSWORD',  'm260587');
 define('vk_client_id', '4514115');
 define('vk_client_secret', '96ZFgmsgUHU0khRncGKB');
 define('vk_redirect_uri', 'http://'.$_SERVER['SERVER_NAME'].'/register.html?provider=vk&scope=email');
@@ -56,7 +56,7 @@ define('go_username', 'id');
 
 function db_mysql_connect()
 {
-    $link = mysql_connect('localhost', DB_USER_NAME, DB_PASSWORD)
+    $link = mysql_connect('mysql.hostinger.com.ua', DB_USER_NAME, DB_PASSWORD)
     	or die('Could not connect to MySQL');
 
     mysql_select_db(DB_NAME)
