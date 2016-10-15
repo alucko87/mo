@@ -685,7 +685,7 @@ transition-duration: 0.5s;}
   padding: 0;}
 
 .back .main_block .first_block .content .search_pad {
-  background:rgba(0, 0, 0, 0.8);
+  background:rgba(0, 0, 0, 0.9);
   position:absolute;
   display:block;
   font-size:15px;
@@ -698,6 +698,7 @@ transition-duration: 0.5s;}
   margin-top:-1px;
   margin-left:1px;
   border-radius:0px 0px 8px 8px;
+  z-index: 999;
   }
 .back .main_block .first_block .content .search_pad li {
   position: relative;
