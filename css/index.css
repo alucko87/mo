@@ -908,7 +908,7 @@ form#offer:before {
 	max-height:100px;
 }
 
-.submit {
+#offer .submit {
 /*	display: table-cell;
 	vertical-align: bottom;
 */	text-align: right;
