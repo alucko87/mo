@@ -973,7 +973,7 @@ form#offer:before {
 	padding: 1px 6px;
 	width: 100px;
 	min-height: 28px;
-	z-index: 999; /* hints stay above all other elements */
+	z-index: 998; /* hints stay above all other elements */
 	position: absolute; /* allows proper formatting if hint is two lines */
 	right: -95px;
 	display: none;

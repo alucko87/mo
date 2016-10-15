@@ -3,13 +3,11 @@ define('DEBUG', false);
 
 define('BASE_ADDRESS', 'http://'.$_SERVER['SERVER_NAME'].'/');
 
-define('DB_NAME', 'u980266495_mo');
-define('DB_USER_NAME', 'u980266495_artem');
-define('DB_PASSWORD',  'm260587');
+// define('DB_NAME', 'u980266495_mo');
+// define('DB_USER_NAME', 'u980266495_artem');
+// define('DB_PASSWORD',  'm260587');
 
-// define('DB_NAME', 'mo');
-// define('DB_USER_NAME', 'root');
-// define('DB_PASSWORD',  'my520228');
+
 define('vk_client_id', '4514115');
 define('vk_client_secret', '96ZFgmsgUHU0khRncGKB');
 define('vk_redirect_uri', 'http://'.$_SERVER['SERVER_NAME'].'/register.html?provider=vk&scope=email');
@@ -58,23 +56,54 @@ define('go_url_access', 'https://accounts.google.com/o/oauth2/token');
 define('go_api', 'https://www.googleapis.com/oauth2/v1/userinfo');
 define('go_username', 'id');
 
+//доступность БД:
+$db_access = false;
+
+//массив конфигураций БД состоит из массивов вида:
+//array(DB_HOST, DB_USER_NAME, DB_PASSWORD, DB_NAME)
+$arr_db_confs = [
+	array('localhost', 'root', 'my520228', 'mo'),
+	array('localhost', 'root', '', 'mo'),
+	array('mysql.hostinger.com.ua', 'u980266495_artem', 'm260587', 'u980266495_mo'),
+];
+
+//определение доступной БД:
+foreach ($arr_db_confs as $db_conf) {
+	if(!mysqli_connect($db_conf[0], $db_conf[1], $db_conf[2], $db_conf[3])) {
+		continue;
+	}
+	// var_dump(mysqli_connect($db_conf[0], $db_conf[1], $db_conf[2], $db_conf[3]));
+	define('DB_HOST', $db_conf[0]);
+	define('DB_USER_NAME', $db_conf[1]);
+	define('DB_PASSWORD',  $db_conf[2]);
+	define('DB_NAME', $db_conf[3]);
+	$db_access = true;
+	break;
+}
+
 function db_mysql_connect()
 {
-    // $link = mysql_connect('localhost', DB_USER_NAME, DB_PASSWORD)
-    // 	or die('Could not connect to MySQL');
-    $link = mysql_connect('mysql.hostinger.com.ua', DB_USER_NAME, DB_PASSWORD)
-    	or die('Could not connect to MySQL');
+	global $db_access;
 
-    mysql_select_db(DB_NAME)
-    	or die('Could not connect to database');
+	if (!$db_access) {
+		die('Could not connect to database');
+	}
 
-    mysql_query('SET NAMES utf8', $link);
+	$link = mysql_connect(DB_HOST, DB_USER_NAME, DB_PASSWORD);
+	mysql_select_db(DB_NAME);
+	mysql_query('SET NAMES utf8', $link);
 
-    return $link;
+	return $link;
 }
 
 function db_name()
 {
+	global $db_access;
+
+	if (!$db_access) {
+		die('Could not connect to database');
+	}
+
 	$db_name=DB_NAME;
 	return $db_name;
 }
